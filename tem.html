@@ -163,13 +163,26 @@
             const printLabelInfo = document.createElement('div');
             printLabelInfo.className = 'print-label-info';
 
+            // Hiển thị thông tin ID
             const labelInfoText = document.createElement('div');
-            labelInfoText.textContent = id;
-
+            labelInfoText.textContent = `ID: ${id}`;
             printLabelInfo.appendChild(labelInfoText);
+        
+            // Hiển thị thông tin Item
+            const itemInfoText = document.createElement('div');
+            itemInfoText.textContent = `Item: ${item}`;
+            printLabelInfo.appendChild(itemInfoText);
+        
+            // Hiển thị thông tin AllDetails
+            const allDetailsInfoText = document.createElement('div');
+            allDetailsInfoText.textContent = `Details: ${allDetails}`;
+            printLabelInfo.appendChild(allDetailsInfoText);
+        
             printPreview.appendChild(printLabelQr);
             printPreview.appendChild(printLabelInfo);
 
+
+            
             const qrContent = `${id}`;
             new QRCode(document.getElementById("previewQRCode"), {
                 text: qrContent,
@@ -193,10 +206,21 @@
             const printLabelInfo = document.createElement('div');
             printLabelInfo.className = 'print-label-info';
 
+             // Hiển thị thông tin ID
             const labelInfoText = document.createElement('div');
-            labelInfoText.textContent = id;
-
+            labelInfoText.textContent = `ID: ${id}`;
             printLabelInfo.appendChild(labelInfoText);
+        
+            // Hiển thị thông tin Item
+            const itemInfoText = document.createElement('div');
+            itemInfoText.textContent = `Item: ${item}`;
+            printLabelInfo.appendChild(itemInfoText);
+        
+            // Hiển thị thông tin AllDetails
+            const allDetailsInfoText = document.createElement('div');
+            allDetailsInfoText.textContent = `Details: ${allDetails}`;
+            printLabelInfo.appendChild(allDetailsInfoText);
+        
             printLabel.appendChild(printLabelQr);
             printLabel.appendChild(printLabelInfo);
             printArea.appendChild(printLabel);
