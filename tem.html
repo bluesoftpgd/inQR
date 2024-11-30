@@ -237,8 +237,8 @@
         window.onload = function () {
             const urlParams = new URLSearchParams(window.location.search);
             const specificId = urlParams.get('id_thung');
-            const item = urlParams.get('item')  || 'Không có thông tin';
-            const allDetails = urlParams.get('allDetails') || 'Không có thông tin';
+            const item = urlParams.get('item');
+            const allDetails = urlParams.get('allDetails');
 
             if (specificId) {
                 loadData(item, specificId, allDetails);
